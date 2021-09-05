@@ -29,9 +29,9 @@ class MainScreenKtTest {
     @Test
     fun MyTest() {
         composeTestRule.onRoot(true).printToLog("TAG")
-        composeTestRule.onNodeWithText("Increment").performClick()
+        composeTestRule.onNodeWithText("+").performClick()
         composeTestRule.onNodeWithText("1").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Decrement").performClick()
+        composeTestRule.onNodeWithText("-").performClick()
         composeTestRule.onNodeWithText("0").assertIsDisplayed()
     }
 }
